@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 1530122453
+    locked: 0
+  - name: Occlusion
+    uniqueID: 3623786679
+    locked: 0
+  - name: Walls
+    uniqueID: 2511953329
+    locked: 0
+  - name: Floors
+    uniqueID: 4171815559
+    locked: 0
+  - name: Behind Char
+    uniqueID: 2466669217
+    locked: 0
+  - name: Char
+    uniqueID: 2061768123
+    locked: 0
+  - name: In Front of Char
+    uniqueID: 2431081135
+    locked: 0
