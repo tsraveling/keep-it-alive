@@ -1,0 +1,20 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:e65fc4758496ee026e37ef9351eb633b:03223b913f27e3fe58aeb7c08625e993:5bb909ff41d279643affbe862ed7cb61$
+#
+:format=40300
+:texture=kitchen.png
+:size=1024x1024
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+counter;1;509;276;514; 0.5;0.5; 0;0;0;0; 11;276;217;273;0;3;0;3;225;276;225;276;381;51;377;0;379;0;513;237;514;276;514; 7;0;3;4;2;3;0;2;0;1;5;9;10;8;6;7;8;9;6;5;6;9
+fridge;279;515;237;508; 0.5;0.5; 0;0;0;0; 7;237;474;234;393;237;212;237;0;0;0;0;508;237;508; 5;0;5;6;2;3;4;5;1;2;5;2;4;0;1;5
+knife;1;151;118;96; 0.5;0.5; 0;0;0;0; 7;36;81;53;14;118;14;118;0;0;0;0;96;21;96; 5;0;5;6;1;2;3;1;3;4;0;1;4;0;4;5
+sink;1;80;97;69; 0.5;0.5; 0;0;0;0; 6;97;8;97;0;0;0;0;28;43;69;67;69; 4;2;0;1;2;3;0;3;4;0;0;4;5
+stove;1;249;261;258; 0.5;0.5; 0;0;0;0; 7;260;257;256;98;261;8;261;0;0;0;0;258;256;258; 5;1;5;6;2;3;4;1;2;4;1;4;5;0;1;6

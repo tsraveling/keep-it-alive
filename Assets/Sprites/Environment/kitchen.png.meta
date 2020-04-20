@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 0581e678386ae4a5fb8ed0662a419174
+guid: 3a263d00c8d504637990bfaffae30d72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3746293986988343631
-    second: floor-segment
+      213: -1077950358999398607
+    second: counter
   - first:
-      213: 7967144338355564990
-    second: photo-grandparents
+      213: 2467607946652282847
+    second: fridge
   - first:
-      213: 70224706705334836
-    second: wall-door
+      213: 3143319658638795022
+    second: knife
   - first:
-      213: 1053112225509551574
-    second: wall-plain
+      213: 1857289232773447772
+    second: sink
   - first:
-      213: 1963031319927020728
-    second: wall-window
+      213: -8630261418693341790
+    second: stove
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: floor-segment
+      name: counter
       rect:
         serializedVersion: 2
         x: 1
-        y: 237
-        width: 295
-        height: 50
+        y: 509
+        width: 276
+        height: 514
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,20 +128,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1beb061b77d720cc0800000000000000
-      internalID: -3746293986988343631
+      spriteID: 13706561cd95a01f0800000000000000
+      internalID: -1077950358999398607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: photo-grandparents
+      name: fridge
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 515
+        width: 237
+        height: 508
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfe3218a54be3220800000000000000
+      internalID: 2467607946652282847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knife
       rect:
         serializedVersion: 2
         x: 1
-        y: 289
-        width: 117
-        height: 92
+        y: 151
+        width: 118
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb1b2f1609bf09e60800000000000000
-      internalID: 7967144338355564990
+      spriteID: e01eaa453905f9b20800000000000000
+      internalID: 3143319658638795022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall-door
+      name: sink
       rect:
         serializedVersion: 2
         x: 1
-        y: 383
-        width: 256
-        height: 640
+        y: 80
+        width: 97
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 432a0a9affc79f000800000000000000
-      internalID: 70224706705334836
+      spriteID: c508e9487ba66c910800000000000000
+      internalID: 1857289232773447772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall-plain
+      name: stove
       rect:
         serializedVersion: 2
-        x: 259
-        y: 383
-        width: 256
-        height: 640
+        x: 1
+        y: 249
+        width: 261
+        height: 258
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,29 +212,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6dd2e1e4df76d9e00800000000000000
-      internalID: 1053112225509551574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall-window
-      rect:
-        serializedVersion: 2
-        x: 517
-        y: 383
-        width: 256
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8bc573bb5961e3b10800000000000000
-      internalID: 1963031319927020728
+      spriteID: 2ad460cf6f62b3880800000000000000
+      internalID: -8630261418693341790
       vertices: []
       indices: 
       edges: []

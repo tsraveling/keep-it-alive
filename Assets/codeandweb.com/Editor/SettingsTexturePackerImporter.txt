@@ -2,16 +2,25 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
-- Assets/Sprites/environment.tpsheet
-- Assets/Sprites/movement.tpsheet
-- Assets/Sprites/outside.tpsheet
+- Assets/Sprites/Environment/environment.tpsheet
+- Assets/Sprites/Environment/kitchen.tpsheet
+- Assets/Sprites/Environment/living-room.tpsheet
+- Assets/Sprites/Environment/outside.tpsheet
+- Assets/Sprites/Player/movement.tpsheet
+- Assets/Sprites/UI/iconography.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
-- Assets/Sprites/environment.png
-- Assets/Sprites/movement.png
-- Assets/Sprites/outside.png
+- Assets/Sprites/Environment/environment.png
+- Assets/Sprites/Environment/kitchen.png
+- Assets/Sprites/Environment/living-room.png
+- Assets/Sprites/Environment/outside.png
+- Assets/Sprites/Player/movement.png
+- Assets/Sprites/UI/iconography.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
 - 
 - 
 - 
