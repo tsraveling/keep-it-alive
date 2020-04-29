@@ -232,7 +232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &113534487
 SpriteRenderer:
@@ -704,6 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272034141}
   - component: {fileID: 272034140}
+  - component: {fileID: 272034142}
   m_Layer: 0
   m_Name: pot
   m_TagString: Untagged
@@ -769,13 +770,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272034139}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.046702, y: -1.0174525, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Children:
+  - {fileID: 1282877620}
+  m_Father: {fileID: 1059682750}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &272034142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272034139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Plant
+  tag: plant
 --- !u!1 &277703415
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 324567237}
   - component: {fileID: 324567238}
+  - component: {fileID: 324567239}
   m_Layer: 0
   m_Name: bookcase
   m_TagString: Untagged
@@ -969,7 +986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &324567238
 SpriteRenderer:
@@ -1022,6 +1039,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &324567239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324567236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Bookcase
+  tag: bookcase
 --- !u!1 &329882524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 345862343}
   - component: {fileID: 345862344}
+  - component: {fileID: 345862345}
   m_Layer: 0
   m_Name: fridge
   m_TagString: Untagged
@@ -1136,6 +1168,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &345862345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345862342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fridge
+  tag: fridge
 --- !u!1 &362258736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 455197635}
   - component: {fileID: 455197636}
+  - component: {fileID: 455197637}
   m_Layer: 0
   m_Name: sink
   m_TagString: Untagged
@@ -1505,6 +1552,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &455197637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455197634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sink
+  tag: sink
 --- !u!1 &563345196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767306378}
   - component: {fileID: 767306379}
+  - component: {fileID: 767306380}
   m_Layer: 0
   m_Name: stove
   m_TagString: Untagged
@@ -1915,6 +1977,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &767306380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767306377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Stove
+  tag: stove
 --- !u!1 &864494236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,6 +2247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890397224}
   - component: {fileID: 890397225}
+  - component: {fileID: 890397226}
   m_Layer: 0
   m_Name: knife
   m_TagString: Untagged
@@ -2243,6 +2320,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &890397226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890397223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Knife
+  tag: knife
 --- !u!1 &914172159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,6 +2508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992690958}
   - component: {fileID: 992690959}
+  - component: {fileID: 992690960}
   m_Layer: 0
   m_Name: weights
   m_TagString: Untagged
@@ -2436,7 +2528,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &992690959
 SpriteRenderer:
@@ -2489,6 +2581,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &992690960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992690957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Weights
+  tag: weights
 --- !u!1 &993399129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,6 +2704,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 272034141}
   - {fileID: 324567237}
   - {fileID: 2132780801}
   - {fileID: 113534486}
@@ -2801,7 +2908,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1178446826
 SpriteRenderer:
@@ -3092,12 +3199,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282877618}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.963, y: -0.591, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.083702564, y: 0.42645246, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 272034141}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297179700
 GameObject:
@@ -3191,6 +3298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325232865}
   - component: {fileID: 1325232864}
+  - component: {fileID: 1325232866}
   m_Layer: 0
   m_Name: balcony
   m_TagString: Untagged
@@ -3262,6 +3370,20 @@ Transform:
   m_Father: {fileID: 1657413780}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1325232866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325232863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Balcony
+  tag: balcony
 --- !u!1 &1387273812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3396,7 @@ GameObject:
   - component: {fileID: 1387273814}
   - component: {fileID: 1387273813}
   - component: {fileID: 1387273816}
+  - component: {fileID: 1387273817}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3381,6 +3504,33 @@ MonoBehaviour:
   animator: {fileID: 1387273813}
   spriteRenderer: {fileID: 1387273814}
   walkSpeed: 2.5
+  leftBound: -6.5
+  rightBound: 16.5
+--- !u!114 &1387273817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387273812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfe1c0c1c6834bd68fa4158fd8b4444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactables:
+  - {fileID: 1514585277}
+  - {fileID: 345862345}
+  - {fileID: 767306380}
+  - {fileID: 455197637}
+  - {fileID: 324567239}
+  - {fileID: 2132780803}
+  - {fileID: 2036500982}
+  - {fileID: 1417819148}
+  - {fileID: 992690960}
+  - {fileID: 1325232866}
+  - {fileID: 272034142}
+  - {fileID: 890397226}
 --- !u!1 &1394514561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +3623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1417819146}
   - component: {fileID: 1417819147}
+  - component: {fileID: 1417819148}
   m_Layer: 0
   m_Name: photo-grandparents
   m_TagString: Untagged
@@ -3492,7 +3643,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1417819147
 SpriteRenderer:
@@ -3545,6 +3696,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1417819148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417819145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Phone
+  tag: phone
 --- !u!1 &1464510092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,6 +4003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514585275}
   - component: {fileID: 1514585276}
+  - component: {fileID: 1514585277}
   m_Layer: 0
   m_Name: wall-window (1)
   m_TagString: Untagged
@@ -3909,6 +4075,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1514585277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514585274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Bedroom Door
+  tag: door
 --- !u!1 &1521399737
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,6 +4996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036500980}
   - component: {fileID: 2036500981}
+  - component: {fileID: 2036500982}
   m_Layer: 0
   m_Name: chair-tv
   m_TagString: Untagged
@@ -4836,7 +5017,7 @@ Transform:
   m_Children:
   - {fileID: 145224382}
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2036500981
 SpriteRenderer:
@@ -4889,6 +5070,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2036500982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036500979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Television
+  tag: tv
 --- !u!1 &2074627924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132780801}
   - component: {fileID: 2132780802}
+  - component: {fileID: 2132780803}
   m_Layer: 0
   m_Name: standing-desk
   m_TagString: Untagged
@@ -5119,7 +5315,7 @@ Transform:
   m_Children:
   - {fileID: 1634731839}
   m_Father: {fileID: 1059682750}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2132780802
 SpriteRenderer:
@@ -5172,6 +5368,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2132780803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132780800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4c653bfff954b2b9e40a6c65c5053c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Desk
+  tag: desk
 --- !u!1 &2145960462
 GameObject:
   m_ObjectHideFlags: 0

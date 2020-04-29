@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public float walkSpeed = 2.0f;
-    
+    public float leftBound = -6.5f;
+    public float rightBound = 16.5f;
+
     private int _animatorIsWalking;
     
     // Start is called before the first frame update
@@ -19,13 +21,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && transform.position.x < this.rightBound)
         {
             animator.SetBool(this._animatorIsWalking, true);
             this.spriteRenderer.flipX = false;
             transform.Translate(Time.deltaTime * walkSpeed * Vector3.right);
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A)  && transform.position.x > this.leftBound)
         {
             animator.SetBool(this._animatorIsWalking, true);
             this.spriteRenderer.flipX = true;
