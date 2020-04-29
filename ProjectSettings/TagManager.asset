@@ -62,3 +62,6 @@ TagManager:
   - name: In Front of Char
     uniqueID: 2431081135
     locked: 0
+  - name: In-map UI
+    uniqueID: 470761421
+    locked: 0

@@ -5,6 +5,7 @@ public class Interactable : MonoBehaviour
 {
     public string name;
     public string tag;
+    public Interaction[] interactions;
     
     // Start is called before the first frame update
     void Start()
