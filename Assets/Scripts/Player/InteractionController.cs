@@ -4,14 +4,52 @@ using UnityEngine;
 
 public class InteractionController : MonoBehaviour
 {
+    static Color activeColor = new Color(1f, 1f, 1f, 1f);
+    static Color inactiveColor = new Color(1f, 1f, 1f, 0.7f);
+    
     public Interactable[] interactables;
     public GameObject interactionBubble;
     public SpriteRenderer iconRenderer;
+    public bool interactionActive = false;
+
+    private SpriteRenderer bubbleSpriteRenderer;
+    private Interactable current;
+    private int selectionIndex;
 
     // Start is called before the first frame update
     void Start()
     {
         this.interactionBubble.SetActive(false);
+        this.bubbleSpriteRenderer = this.interactionBubble.GetComponent(typeof(SpriteRenderer)) as SpriteRenderer;
+    }
+    
+    // Handle key interface
+    void handleKeyInput()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            this.interactionActive = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            this.selectionIndex--;
+            if (this.selectionIndex < 0)
+                this.selectionIndex = this.current.interactions.Length - 1;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            this.selectionIndex++;
+            if (this.selectionIndex >= this.current.interactions.Length)
+                this.selectionIndex = 0;
+        }
+    }
+
+    public void activate()
+    {
+        this.interactionActive = true;
+        this.selectionIndex = 0;
     }
 
     // Update is called once per frame
@@ -38,14 +76,29 @@ public class InteractionController : MonoBehaviour
             interactionBubble.transform.position = pos;
             if (closest.interactions.Length > 0)
             {
-                var defaultInteraction = closest.interactions[0];
+                var defaultInteraction = closest.interactions[this.selectionIndex];
                 iconRenderer.sprite = defaultInteraction.sprite;
                 interactionBubble.SetActive(true);
             }
+
+            if (this.interactionActive)
+            {
+                this.handleKeyInput();
+            }
+
+            this.current = closest;
         }
         else
         {
             interactionBubble.SetActive(false);
+            this.interactionActive = false;
         }
+        
+        // Set alpha based on interaction engagement
+        var alphaColor = this.interactionActive
+            ? InteractionController.activeColor
+            : InteractionController.inactiveColor;
+        this.iconRenderer.color = alphaColor;
+        this.bubbleSpriteRenderer.color = alphaColor;
     }
 }

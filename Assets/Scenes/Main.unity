@@ -3731,6 +3731,7 @@ MonoBehaviour:
   walkSpeed: 2.5
   leftBound: -6.5
   rightBound: 16.5
+  interactionController: {fileID: 1387273817}
 --- !u!114 &1387273817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3758,6 +3759,7 @@ MonoBehaviour:
   - {fileID: 890397226}
   interactionBubble: {fileID: 1312517492}
   iconRenderer: {fileID: 634468615}
+  interactionActive: 0
 --- !u!1 &1394514561
 GameObject:
   m_ObjectHideFlags: 0
